@@ -1,0 +1,32 @@
+.Profile {
+    color: #ffffff;
+}
+
+.Profile img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-radius: 50%;
+}
+
+.Profile span {
+    display: block;
+    margin: 16px auto;
+    width: 90%;
+}
+
+.Profile span:after {
+    content: "";
+    display: block;
+    width: 220px;
+    border-bottom: 1px solid rgb(92, 50, 92);
+    margin: 16px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .Profile span:after {
+        width: 90%;
+    }
+}

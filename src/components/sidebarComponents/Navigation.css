@@ -1,0 +1,21 @@
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.navbar-menu li a {
+    color: rgb(183, 165, 183);
+    text-decoration: none;
+}
+
+.navbar-menu li a:hover {
+    font-weight: 900;
+    text-decoration: underline;
+}

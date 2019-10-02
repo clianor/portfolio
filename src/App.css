@@ -1,22 +1,32 @@
-.App {
-  text-align: center;
+.Sidebar {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    background-color: rgb(63, 14, 64);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
+.Content {
+    margin-left: 260px;
+    padding: 1px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media screen and (max-width: 1024px) {
+    .Sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .Sidebar a {float: left;}
+    div.Content {margin-left: 0;}
 
-.App-link {
-  color: #09d3ac;
+    /* sidebarComponents의 Navigation 컴포넌트 */
+    .navbar-menu {
+        flex-direction: row;
+    }
+    .navbar-menu li {
+        margin-bottom: 0;
+    }
 }
