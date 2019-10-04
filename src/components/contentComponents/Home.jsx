@@ -3,6 +3,7 @@ import './Home.css';
 import { faHome, faEnvelope, faSchool } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Scrollspy from "../Scrollspy";
+import profile from '../../images/homeProfile.jpg';
 
 const Home = () => {
     return (
@@ -34,9 +35,8 @@ const Home = () => {
                     </ul>
                 </div>
                 <div className="rightBox">
-                    <img src="https://avatars0.githubusercontent.com/u/29789577?s=460&v=4" alt="profile"/>
+                    <img src={profile} alt="profile"/>
                 </div>
-
             </div>
         </div>
     );
