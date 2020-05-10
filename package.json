@@ -35,5 +35,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage" : "http://clianor.github.io/portfolio"
+  "homepage": "http://clianor.github.io/portfolio",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
