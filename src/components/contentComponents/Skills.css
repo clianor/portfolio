@@ -11,10 +11,10 @@
 
 .flip-card {
     background-color: transparent;
-    min-width: 180px;
-    min-height: 180px;
+    width: 13rem;
+    height: 13rem;
     perspective: 1000px;
-    margin-top: 10px;
+    margin-top: 0.8rem;
 }
 
 .flip-card-inner {
@@ -47,7 +47,6 @@
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-    padding: 5px;
 }
 
 .flip-card-back > p:nth-child(n+2) {
