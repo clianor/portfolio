@@ -52,6 +52,8 @@
 
 .flip-card-back p {
     display: block;
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 .flip-card-back p:nth-of-type(n+2) {
