@@ -1,9 +1,7 @@
 import React from "react";
 import Scrollspy from "../Scrollspy";
 import "./Skills.css";
-import Language from "./Language";
-import Framework from "./Framework";
-import Tools from "./Tools";
+import ItemList from "./ItemList";
 
 const lang_items = [
   {
@@ -114,9 +112,9 @@ const Skills = () => {
       <Scrollspy anchor="skills" />
       <h2>Skills</h2>
 
-      <Language items={lang_items} />
-      <Framework items={frm_items} />
-      <Tools items={tls_items} />
+      <ItemList name="Language" items={lang_items} />
+      <ItemList name="Framework & Library" items={frm_items} />
+      <ItemList name="Tools" items={tls_items} />
     </div>
   );
 };

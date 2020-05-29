@@ -1,10 +1,10 @@
 import React from "react";
 import Item from "./Item";
 
-export default ({ items }) => {
+export default ({ name, items }) => {
   return (
     <React.Fragment>
-      <h4>Framework &amp; Library</h4>
+      <h4>{name}</h4>
       <div className="cards">
         {items.map((item) => (
           <Item
