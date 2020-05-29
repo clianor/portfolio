@@ -1,84 +1,19 @@
 import React from "react";
+import Item from "./Item";
 
-export default () => {
+export default ({ items }) => {
   return (
     <React.Fragment>
       <h4>Framework &amp; Library</h4>
       <div className="cards">
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw84DW4JVa2eAMTcWhOj9-9JYji_-C1_k9vrtRmCcmbEbHoYTP"
-                alt="django"
-              />
-            </div>
-            <div className="flip-card-back">
-              <p>
-                <b>중급</b>
-              </p>
-              <p>사내 도서 검색 시스템 구축.</p>
-              <p>부산 주공 작업지시서 슬라이드 웹 구축.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                src="data:image/jpeg;base64,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"
-                alt="express"
-              />
-            </div>
-            <div className="flip-card-back">
-              <p>
-                <b>중급</b>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                src="data:image/png;base64,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"
-                alt="react"
-              />
-            </div>
-            <div className="flip-card-back">
-              <p>
-                <b>중급</b>
-              </p>
-              <p>
-                ModbusTCP로 <br /> 수집한 데이터 <br /> 분석 시각화.
-              </p>
-              <p>포트폴리오 구현.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img
-                src="data:image/png;base64,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"
-                alt="devexpress"
-              />
-            </div>
-            <div className="flip-card-back">
-              <p>
-                <b>중급</b>
-              </p>
-              <p>
-                아주대 요양병원
-                <br />
-                인사&amp;회계 시스템 개발 참여
-              </p>
-            </div>
-          </div>
-        </div>
+        {items.map((item) => (
+          <Item
+            lang={item.lang}
+            url={item.url}
+            grade={item.grade}
+            proj_list={item.proj_list}
+          />
+        ))}
       </div>
     </React.Fragment>
   );
