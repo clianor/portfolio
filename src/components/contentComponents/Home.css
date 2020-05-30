@@ -20,6 +20,8 @@
 
 .Home .wrapper .leftBox span {
     margin-top: 7px;
+    word-break: keep-all;
+    word-wrap: break-word;
 }
 
 .Home .wrapper .leftBox > span:nth-last-child(2) {
