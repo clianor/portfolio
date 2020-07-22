@@ -7,12 +7,7 @@ export default ({ name, items }) => {
       <h4>{name}</h4>
       <div className="cards">
         {items.map((item) => (
-          <Item
-            lang={item.lang}
-            url={item.url}
-            grade={item.grade}
-            proj_list={item.proj_list}
-          />
+          <Item lang={item.lang} url={item.url} proj_list={item.proj_list} />
         ))}
       </div>
     </React.Fragment>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ url, lang, grade, proj_list }) => {
+export default ({ url, lang, proj_list }) => {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">
@@ -10,9 +10,6 @@ export default ({ url, lang, grade, proj_list }) => {
         <div className="flip-card-back">
           <p>
             <b>{lang}</b>
-          </p>
-          <p>
-            <b>[{grade}]</b>
           </p>
           {proj_list.map((item) => (
             <p>{item}</p>

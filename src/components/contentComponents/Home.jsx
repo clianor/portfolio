@@ -25,7 +25,7 @@ const Home = () => {
               <FontAwesomeIcon icon={faSchool} /> 경성대학교
             </span>
             <span>
-              <FontAwesomeIcon icon={faEnvelope} /> ejrgus9416@naver.com
+              <FontAwesomeIcon icon={faEnvelope} /> devlion@kakao.com
             </span>
           </span>
           <span className="contents">
@@ -47,7 +47,7 @@ const Home = () => {
             <li>前. 구름 DevelUP 1기 멤버</li>
             <li>前. 아이티공간 사원</li>
             <li>前. D&amp;D 2기 멤버</li>
-            <li>Ghtech 사원</li>
+            <li>SWCORE 사원</li>
           </ul>
         </div>
         <div className="rightBox">
